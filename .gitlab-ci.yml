@@ -1,0 +1,24 @@
+image: mcr.microsoft.com/dotnet/sdk:latest
+
+variables:
+  # 2) Name of directory used for keeping restored dependencies.
+  NUGET_PACKAGES_DIRECTORY: '/builds/chitupipelines/devops/WebAppSwk/bin/Release/WebAppSwk.1.0.0.nupkg'
+  # 3) A relative path to the source code from project repository root.
+  # NOTE: Please edit this path so it matches the structure of your project!
+  SOURCE_CODE_PATH: '/builds/chitupipelines/devops/WebAppSwk/WebAppSwk.csproj'
+
+stages:
+  - build
+  - pack
+build: 
+  stage: build
+  script: 
+    - 'dotnet build $SOURCE_CODE_PATH'
+
+pack: 
+  stage: pack
+  script:
+    - 'dotnet pack $SOURCE_CODE_PATH'
+  artifacts:
+    paths:
+      - $NUGET_PACKAGES_DIRECTORY

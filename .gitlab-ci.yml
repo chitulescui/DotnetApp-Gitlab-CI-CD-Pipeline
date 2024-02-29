@@ -1,0 +1,32 @@
+stages:
+    - build
+    - deploy
+    - test
+
+variables:
+  RAILS_ENV: "test"
+  NODE_ENV: "test"
+  GIT_STRATEGY: "clone"
+  CHROME_VERSION: "103"
+  DOCKER_VERSION: "20.10.14"
+
+build-job:
+  stage: build
+  script:
+    - dotnet build WebAppSWk.csproj
+
+# deploy-code:
+  # stage: deploy
+  # needs: build-job
+  # script:
+    # - echo "Deploy your code "
+    # - cd to/your/desired/folder
+    # - bash deployScript.sh
+# 
+# test-code:
+  # stage: test
+  # needs: deploy-code
+  # script:
+    # - echo "Run your tests here."
+    # - cd to/your/desired/folder
+    # - npm run test

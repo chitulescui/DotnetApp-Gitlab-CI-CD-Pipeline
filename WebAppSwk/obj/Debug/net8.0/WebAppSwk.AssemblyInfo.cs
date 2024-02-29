@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppSwk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ade0ab73a085e430323a5eae7e1e0f894ed70e58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+468884a7813f29fcc1ef6fc3a54dc3660c81432e")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppSwk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppSwk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

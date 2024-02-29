@@ -23,4 +23,4 @@ pack:
     - 'dotnet pack /builds/chitupipelines/devops/WebAppSwk/WebAppSwk.csproj'
   artifacts:
     paths:
-      - /builds/chitupipelines/devops/WebAppSwk/bin/Release/WebAppSwk.1.0.0.nupkg
+      - .output/WebAppSwk.1.0.0.nupkg

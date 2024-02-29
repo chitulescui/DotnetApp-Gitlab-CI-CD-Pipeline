@@ -54,11 +54,11 @@ cache:
     #
     # 1) Main JSON file holding information about package dependency tree, packages versions,
     # frameworks etc. It also holds information where to the dependencies were restored.
-    - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/project.assets.json'
+    - '.\devops\WebAppSwk\obj\project.assets.json'
     # 2) Other NuGet and MSBuild related files. Also needed.
-    - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/*.csproj.nuget.*'
+    - '*\.csproj'
     # 3) Path to the directory where restored dependencies are kept.
-    - '$NUGET_PACKAGES_DIRECTORY'
+    - './bin/Release/'
   #
   # 'pull-push' policy means that latest cache will be downloaded (if it exists)
   # before executing the job, and a newer version will be uploaded afterwards.

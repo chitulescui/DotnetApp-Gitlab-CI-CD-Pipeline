@@ -14,4 +14,4 @@ stages:
 build: 
   stage: build
   script: 
-    - 'dotnet build --no-restore'
+    - 'dotnet build /devops/WebAppSwk/WebAppSwk.csproj'

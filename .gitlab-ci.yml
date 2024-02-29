@@ -20,4 +20,4 @@ build:
 pack: 
   stage: pack
   script:
-    - 'dotnet pack'
+    - 'dotnet pack /builds/chitupipelines/devops/WebAppSwk/WebAppSwk.csproj'

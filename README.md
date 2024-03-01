@@ -43,7 +43,7 @@ dotnet nuget add source --username username --password "password" --store-passwo
 dotnet nuget push "bin/Release/WebAppSwk.1.0.0.nupkg" --api-key "api-key" --source "name"
 ```
 # Run Docker containers for each application
-Docker image file was configured with port exposed to : 8080. 
+Docker image file was configured with the port exposed to : 8080. 
 
 
 Run docker container with the following comand:

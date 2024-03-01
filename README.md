@@ -44,6 +44,8 @@ dotnet nuget push "bin/Release/WebAppSwk.1.0.0.nupkg" --api-key "api-key" --sour
 ```
 # Run Docker containers for each application
 Docker image file was configured with port exposed to : 8080. 
+
+
 Run docker container with the following comand:
 ```
 docker compose up --build
